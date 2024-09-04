@@ -61,11 +61,18 @@ print("Salary is",sal)
 print("Name is %s. Age is %d . Salary is %g" %(name,age,sal))
 #Approach4 {} - using the format function to print the values
 print("Name is {}. Age is {} . Salary is {}" .format(name,age,sal))
- 
-
-
-
-
+ #Taking Input from user 
+#approach1
+num1=int (input("Enter the First number"))
+num2=int (input("Enter the second Number"))
+print(type(num1))
+print(type(num2))
+#  If we are passing the values through console window at runtime, it will consider num1 and num2 as string , hence we specify the int type .
+print(num1+num2)
+#Approach 2
+num3= input("Enter the first number")
+num4= input("Enter the second number")
+print (int(num3)+int(num4))
 
 
 
