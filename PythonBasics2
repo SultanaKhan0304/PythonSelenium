@@ -1,0 +1,62 @@
+#Session 2 
+# Deleting Variables
+r=2
+s=1
+del r # Deleting the variable r
+# print (r) NameError: name 'r' is not defined
+# print(s)  It will fail to run this line
+
+#Operators
+#Arithmetic Operators
+a=5
+b=2
+add=a+b
+print(add)
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b) 
+print(a//b) #Returns Quotient value
+print(a%b) # Returns Remainder value
+print(a**b) # Returns Exponential value
+
+#Relational Operators / comparison operators
+#Always returns boolean value True/False
+c=5
+d=10
+print(c>d)
+print(c<d)
+print(c==d)
+print(c!=d)
+print(c>=d)
+
+#Logical Operators
+# and or not - use alongwith boolean values
+a=True
+b=False
+print(a and b)
+print (a or b)
+print (not a)
+
+#Concatenation +
+
+print(10+10)
+print(10.5+12.0)
+print(10+10.5)
+print('welcome'+'python')
+print(True+5) # Default value of True is 1
+print(False+5) # Default value of False is 0
+print(True+True)
+# print(10+'welcome') - Not valid as both the values are of different data type
+# print(True+'Welcome') - This is not valid too as both the values are of different data type
+# We cannot concatenate different type of dat
+
+
+
+
+
+
+
+
+
+
