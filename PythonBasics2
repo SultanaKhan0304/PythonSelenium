@@ -74,7 +74,59 @@ num3= input("Enter the first number")
 num4= input("Enter the second number")
 print (int(num3)+int(num4))
 
+# Control statements
+# 1. Conditional statements
+#if if..else elif
+#Example 1
+age=15
+if age>=18:
+    print("Eligible  for vote")
+else:
+    print("Not Eligible for vote")
 
+# Example 2
+if True:
+    print("true condition")
+else:
+    print("false condition")
+    
+# Example 3
+if 1:
+    print("one")
+else:
+    print("Not one")
 
+# Example 4
+num=10
+if num%2==0:
+    print("Even Number")
+else:
+    print("Odd Number")
 
+#Example5 Ternary operator
+num=10
+print("Even Number") if num%2==0 else print("Odd number")
 
+#Example 6 Multiple statements in a single line using Curly braces
+a=20
+{print("Hello"), print("python")} if a>=10 else {print("hi"), print("java")}
+
+# Example 7 Multiple conditions can be handles using elif statement
+
+weekno=4
+if weekno==1:
+    print("Sunday")
+elif weekno==2:
+    print("Monday")
+elif weekno==3:
+    print("tuesday")
+elif weekno==4:
+    print("Wednesday")
+elif weekno==5:
+    print("Thursday")
+elif weekno==6:
+    print("Friday")
+elif weekno==7:
+    print("Saturday")
+else:
+    print("Invalid week number")
