@@ -2,7 +2,7 @@
 import keyword
 print("Hello Girl")
 print(10+20)
-x=20
+x=20 
 y=20
 print(x+y)
 print("I am working with Python")
