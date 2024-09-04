@@ -49,7 +49,18 @@ print(False+5) # Default value of False is 0
 print(True+True)
 # print(10+'welcome') - Not valid as both the values are of different data type
 # print(True+'Welcome') - This is not valid too as both the values are of different data type
-# We cannot concatenate different type of dat
+# We cannot concatenate different type of data types directly
+#Approach1 for printing the values
+name,age,sal="John",30,5000.50
+print(name,age,sal) 
+#Approach2 for printing the values
+print( "Name is",name)
+print ("Age is",age)
+print("Salary is",sal)
+#Approach3 for printing the values
+print("Name is %s. Age is %d . Salary is %g" %(name,age,sal))
+#Approach4 {} - using the format function to print the values
+print("Name is {}. Age is {} . Salary is {}" .format(name,age,sal))
  
 
 
