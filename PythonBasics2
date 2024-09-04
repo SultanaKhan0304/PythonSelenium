@@ -50,7 +50,7 @@ print(True+True)
 # print(10+'welcome') - Not valid as both the values are of different data type
 # print(True+'Welcome') - This is not valid too as both the values are of different data type
 # We cannot concatenate different type of dat
-
+ 
 
 
 
