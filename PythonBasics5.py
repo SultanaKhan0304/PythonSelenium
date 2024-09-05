@@ -30,5 +30,29 @@ print(myset)
 myset.remove("xyz") #Removing item which is not availabe in set gives KeyError: 'xyz'
 print(myset)
 myset.discard("xyz") #Removing item which is not availabe in set gives no Error
+# Example7 - clear all items from the set
+myset={"apple","banana","cherry"}
+myset.clear()
+print(myset) # Output is an empty set - set()
+del myset
+print(myset) #NameError: name 'myset' is not defined
+# Example7 - Joining 2 sets - union()
+set1={"1","2","3"}
+set2={"a","b","c"}
+set3=set1.union(set2)
+print(set3)
+#update()
+set1={"1","2","3"}
+set2={"a","b","c"}
+set1.update(set2)
+print(set1)
+
+
+
+
+
+
+
+
 
 
