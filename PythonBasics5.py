@@ -46,13 +46,86 @@ set1={"1","2","3"}
 set2={"a","b","c"}
 set1.update(set2)
 print(set1)
-
-
-
-
-
-
-
-
-
+# Dictionary
+#Example1 - creating dictionary
+mydic={101:"x",102:'y',103:"z"} #Key value pairs
+print(mydic)
+#Example 2 Acessing items from Dictionary
+mydic={
+    "brand":"Hyundai",
+    "model":"i10",
+    "year":2021
+}
+print(mydic["brand"])
+print(mydic["model"])
+#using get()
+print(mydic.get("brand"))
+#Example 3 Change values in the Dictionary
+mydic={
+    "brand":"Hyundai",
+    "model":"i10",
+    "year":2021
+}
+print(mydic)
+mydic["year"]=2022
+print(mydic)
+#Example 4 - Reading items from Dictionary using loop
+mydic={
+    "brand":"Hyundai",
+    "model": "i10",
+    "year":2020
+}
+for i in mydic:
+    print(i) #This only prints the key
+    print(mydic[i]) #This will print the values
+#This for loop will print the values
+for i in mydic.values():
+    print(i)
+#This for loop will print the keys and values both
+for x,y in mydic.items():
+    print(x,y)
+#Example 5 - Check if key exists in dictionary or not
+mydic={
+    "brand":"Hyundai",
+    "model": "i10",
+    "year":2020
+}
+if "model" in mydic:
+    print("exist")
+else:
+    print("not exist")
+print("model" in mydic) #True
+#Example7- Adding items to the dictionary
+mydic={
+     "brand":"Hyundai",
+     "model": "i10",
+    "year":2020
+ }
+mydic["color"]="red"
+print(mydic)
+#Example 8 - remove items from the dictionary
+mydic={
+     "brand":"Hyundai",
+     "model": "i10",
+    "year":2020
+ }
+mydic.pop("year") #pop() function
+print(mydic)
+del mydic["model"] # del for removing 
+print(mydic
+del mydic #remove the complete dictionary
+print(mydic) # This will not print as it is removed "NameError: name 'mydic' is not defined"
+mydic.clear()
+print(mydic) # This will print empty dictionary - {}
+#Example 9 copy the dictionary into another dictionary
+mydic={
+     "brand":"Hyundai",
+     "model": "i10",
+    "year":2020
+ }
+mydic2=mydic
+print(mydic2)
+#By using copy() function
+mydic1=mydic.copy()
+print(mydic1)
 
