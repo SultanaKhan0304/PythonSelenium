@@ -80,6 +80,57 @@ list1=['a','b',"c"]
 list2=[1,2,3]
 list1.extend(list2)
 print(list1)
-
-
-
+# Tuple - It is ordered and unchangeable . () , Tuple is Immutable
+mytuple=("apple","banana","cherry")
+print(mytuple)
+#Example2 - Access Tuple items
+mytuple=("apple","banana","cherry")
+print(mytuple[1])
+print(mytuple[-1]) #cherry
+#Example 3 - Range of indexes
+mytuple=("apple","banana","cherry","kiwi","melon","mango")
+print(mytuple[2:5])
+mytuple=("apple","banana","cherry","orange","kiwi","melon","mango")
+print(mytuple[-4:-1]) # ('orange', 'kiwi', 'melon')
+#Example 4: Changing tuple items 
+#by default tuple does not allow us to change value as it is immutable 
+# so we use a workaround 
+#tuple --> list(modify)--> tuple
+mytuple=("apple","banana","cherry","orange","kiwi","melon","mango")
+mylist=list(mytuple) #changed the tuple to list
+mylist[0]="orange" #made the modification in the list
+mytuple=tuple(mylist) #convert the list to tuple
+print(mytuple)  #print the tuple
+#Example 5 Reading tuple items using loop
+mytuple=("apple","banana","cherry","orange","kiwi","melon","mango")
+for i in mytuple:
+    print(i)
+#Example 6 Checking if item exists in the tuple
+mytuple=("apple","banana","cherry","orange","kiwi","melon","mango")
+if "berry" in mytuple:
+    print("yes berry is present")
+else:
+    print("no, berry is not present")
+#Example 7 Tuple length
+mytuple=("apple","banana","cherry","orange","kiwi","melon","mango")
+print(len(mytuple))
+#Example 9 - copy tuple from one to another
+mytuple1=("apple","banana","cherry")
+mytuple2=mytuple1
+print(mytuple2)
+#Example 10 delete a tuple
+mytuple1=("apple","banana","cherry")
+del mytuple1 #removes the tuple completely
+print(mytuple1)
+#Example11 Join/Combine tuple
+tuple1=(10,20,30)
+tuple2=('a','b','c')
+tuple3= tuple1+tuple2
+print(tuple3)
+#Example 12 - Compare 2 tuples 
+tuple1=(10,20,30)
+tuple2=(10,20,30)
+if tuple1==tuple2:
+    print("tuples are equal")
+else:
+    print("tuples are not equal")
