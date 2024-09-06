@@ -105,3 +105,66 @@ cobj=C() # can  access class A , Class B, Class C
 cobj.m1()
 cobj.m2()
 cobj.m3()
+Example 6 : Method override
+class A:
+    def m1(self):
+        print("This is m1 method from class A")
+class B(A):
+    def m1(self):
+        print("This is m2 method from class B")
+        super().m1() # super() keyword  will call the m1 method from class A
+bobj=B()
+bobj.m1() #This will invoke the m1 method from B class
+# Example 7:
+class A:
+    a,b=10,20
+class B(A):
+    i,j=100,200
+    def m(self,x,y):
+        print(x+y) #local variables
+        print(self.i+self.j) #class variables
+        print(self.a+self.b) #class variables
+bobj=B()
+bobj.m(100,200)
+# Example 8 : variable override
+class Parent:
+    name="Scott"
+class child(Parent):
+    name="John" #overriding the variable    
+cobj=child()
+print(cobj.name)
+# Example 9:Overriding methods
+class Bank:
+    def rateOfInterest(self):
+        return 0
+        
+class XBank(Bank):
+    def rateofInterest(self):
+        return 10
+        
+class YBank(Bank):
+    def rateofInterest(self):
+        return 12
+objx=XBank()
+print(objx.rateofInterest()) #10
+objy=YBank()
+print(objy.rateofInterest()) #12
+# Example 10 : Overloading concept (Polymorphism)
+class Human:
+    def sayhello(self,name=None):
+        if name is not None:
+            print("Hello "+name)
+        else:
+            print("Hello")
+h=Human()
+h.sayhello("scott") # Method when parameter is passed
+h.sayhello() #Method when parameter is not passed 
+#one method in multiple forms is overloading
+# Example 11 - Overloading 2
+class Calculation:
+    def add (self,a=0,b=0,c=0):
+        print(a+b+c)
+calobj=Calculation()
+calobj.add()
+calobj.add(10,20)
+calobj.add(100,200,300)
