@@ -68,7 +68,31 @@ obj1=Animal()
 obj1.display()
 obj2=Bird()
 obj2.display()
+#Packages - Collection of Modules 
+#created a package with name - pack1
+#created below modules inside the package pack1
+#Module 1
+def display():
+    print("Display function from Module1")
+#Module 2
+def show():
+    print("This is show function from Module2") 
 
+#client.py
+#Created new module client.py which is not part of package pack1 
+#so we cannot directly import 
+#Approach 1 - use sys.path to access the package and its modules
+import sys
+sys.path.append("Mention the complete path of package pack1")
+import module1
+import module2
+module1.display()
+module2.show()
+#Approach 2 
+from module1 import*
+from module2 import*
+display()
+show()
 
 
 
