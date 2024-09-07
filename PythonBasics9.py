@@ -45,7 +45,29 @@ color()
 from bird import *
 fly()
 color()
-
+#a.py - Module 1
+class Animal:
+    def display(self):
+        print("I like cow")
+#b.py - Module 2
+class Bird:
+    def display(self):
+        print("I like bird")
+#ab.py - Module 3
+#Approach 1
+import a
+import b
+obj1=a.Animal() #Animal() class belongs to Module a
+obj1.display()
+obj2=b.Bird()
+obj2.display()
+#Approach 2 - Importing module name with function name
+from a import Animal
+from b import Bird 
+obj1=Animal()
+obj1.display()
+obj2=Bird()
+obj2.display()
 
 
 
