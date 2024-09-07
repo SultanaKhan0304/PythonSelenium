@@ -93,6 +93,27 @@ from module1 import*
 from module2 import*
 display()
 show()
-
-
-
+#PackageA - we create employee module
+class Employee:
+    def __init__(self,eid,sal):
+        self.eid=eidself.ename=ename
+        self.sal=sal
+    def displayemp(self):
+        print(self.eid,self.ename,self.sal)
+#PackageB - inside this we create student module named - stu.py
+class Student:
+    def __init__(self,sid,sname,grad):
+        self.sif=sid
+        self.sname=sname
+        self.grad=grad
+    def displaystu(self):
+        print(self.sid,self.sname,self.grad)        
+#Package C - client.py
+import sys
+sys.path.append("Location of PackageA")
+import emp
+empobj=emp.Employee(101,"John",50000)
+empobj.displayemp()
+import stu
+stuobj=stu.Student(122."scott",'B')
+stuobj.displaystu()
