@@ -56,4 +56,23 @@ except ValueError:
     print("value error exception occured and handled...")
 enterage(-1)
 print("program completed..")
-
+#File Handling / working with text
+#Example 1 : Writing data in to text file 
+file=open("C:\DemoFiles\myfile.txt",'w') # W is write mode , R is read mode, A is append mode
+file.write("This is my first statement\n")
+file.write("This is my first statement\n")
+file.write("This is my first statement\n")
+file.write("This is my first statement")
+file.close()
+print("program completed")
+#Example 2: reading data from text file
+file=open("C:\DemoFiles\myfiles.txt",'r')
+print(file.read()) #all lines are printed
+print(file.readline()) #only first line is printed
+file.close()
+#Example 3 - Appending Data into text file
+file=open("C:\DemoFiles\myfiles.txt",'w')
+file.write("this is my sixth line\n")
+file.write("This is my seventh line\n")
+file.close()
+print("program is completed")
