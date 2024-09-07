@@ -1,1 +1,1 @@
-Pthon Programming with Selenium
+Python Programming with Selenium
