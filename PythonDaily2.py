@@ -1,4 +1,4 @@
-An extra day is added to the calendar almost every four years as February 29, and the day is called a leap day. It corrects the calendar for the fact that our planet takes approximately 365.25 days to orbit the sun. A leap year contains a leap day.
+Example 1 - An extra day is added to the calendar almost every four years as February 29, and the day is called a leap day. It corrects the calendar for the fact that our planet takes approximately 365.25 days to orbit the sun. A leap year contains a leap day.
 In the Gregorian calendar, three conditions are used to identify leap years:
 The year can be evenly divided by 4, is a leap year, unless:
 The year can be evenly divided by 100, it is NOT a leap year, unless:
@@ -18,7 +18,14 @@ def is_leap(year):
 
     else:
         return False
-    
 
 year = int(input())
 print(is_leap(year))
+Example 2: The included code stub will read an integer, , from STDIN.
+Without using any string methods, try to print the following:
+Note that "" represents the consecutive values in between.
+if __name__ == '__main__':
+    n = int(input())
+    
+    for i in range(1,n+1):
+        print(i,end="")
